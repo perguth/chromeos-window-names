@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "chromeos-window-name",
+  "author": "Per Guth <mail@perguth.de>",
+  "version": "0.0.1",
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "128": "assets/icon128.png"
+    },
+    "default_title": "Google Mail",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["eventpage.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage"
+  ]
+}
